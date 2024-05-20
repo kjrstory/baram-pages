@@ -9,7 +9,7 @@ category: tutorials
 
 ## 1. 개요 
 
-본 예제는 정상상태 비압축성 유동해석 예제이다. 입구 영역에서 유입되는 공기에 의해 외팔보가 (Cantilever Beam) 변형되는 정도를 확인하는 1way FSI (Fluid Structure Interaction) 예제이다.
+본 예제는 정상상태 비압축성 유동해석 예제이다. 입구 영역에서 유입되는 공기에 의해 외팔보(Cantilever Beam)가 변형되는 정도를 확인하는 1way FSI (Fluid Structure Interaction) 예제이다.
 
 외팔보는 두께 5mm, 길이 50mm, 높이 150mm이다. 절반만 모델링하여 Symmetry 경계 조건을 부여한다.
 
@@ -26,7 +26,7 @@ category: tutorials
 계산 조건은 다음과 같다. 
 
 + solver : buoyantSimpleNFoam (넥스트폼이 개발한 정상상태 비압축성 해석 솔버)
-+ 난류 모델 : $Standard$ $k-\epsilon$
++ 난류 모델 : Standard $k-\epsilon$
 + 밀도 : 1.225 $kg/m^3$
 + 점성 계수 : 1.79e-5 $kg/ms$
 + 유동 조건 : inlet에서 80 $m/s$
@@ -49,7 +49,7 @@ category: tutorials
 
 ## 5. Models
 
-본 예제에서 사용하는 난류 모델은 Default인 $Standard$ $k-\epsilon$ 모델로 설정한다. 
+본 예제에서 사용하는 난류 모델은 Default인 Standard $k-\epsilon$ 모델로 설정한다. 
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/cantilever/3.png"><br>
@@ -67,7 +67,7 @@ category: tutorials
 
 아래와 같이 경계면 타입과 경계값을 설정한다.
 
-+ Hex6_1_xMin : velocity Inlet
++ Hex6_1_xMin : Velocity Inlet
     + Velocity Specfication Method : Magnitude, Normal to Boundary
     + Profile Type : Constant
     + Velocity Magnitude : 80 (m/s)
@@ -78,7 +78,7 @@ category: tutorials
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/cantilever/5.png"><br>
 </p>
 
-+ Hex6_1_zMax : velocity Inlet
++ Hex6_1_zMax : Velocity Inlet
     + Velocity Specfication Method : Component
     + Profile Type : Constant
     + X-Velocity : 80 (m/s)
@@ -187,7 +187,7 @@ Run Conditions에서 다음과 같이 설정 후 계산을 진행한다.
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/cantilever/14.png"><br>
 </p>
 
-계산이 완료되면 아래와 같이 Residuals과 Forcegit monitor의 그래프가 나온다.
+계산이 완료되면 아래와 같이 Residuals과 Force monitor의 그래프가 나온다.
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/cantilever/15.png"><br>
@@ -199,7 +199,7 @@ Run Conditions에서 다음과 같이 설정 후 계산을 진행한다.
 
 ## 12. 후처리
 
-External tools의 paraivew 버튼을 클릭하여 실행한다. 본 예제에서는 외팔보 주변 압력장을 그려본다.
+External tools의 ParaView 버튼을 클릭하여 실행한다. 본 예제에서는 외팔보 주변 압력장을 그려본다.
 
 Case Type을 Decomposed Case로 변경한다.
 
