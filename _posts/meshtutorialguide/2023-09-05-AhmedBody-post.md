@@ -21,7 +21,7 @@ category: mesh
 Feature Angle을 비활성화하고 ahmed.stl을 연다.<br>
 
 <p align='center'>
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/ahmedBody/1.png"><br>
+    <img src="screenshots/mesh/ahmedBody/1.png"><br>
 </p>
 
 Geometry tab에서 surface들의 이름을 다음과 같이 변경한다.<br>
@@ -50,7 +50,7 @@ Geometry tab에서 surface들의 이름을 다음과 같이 변경한다.<br>
 ```Z : 0 ~ 3```<br>
 
 <p align='center'>
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/ahmedBody/3.png"><br>
+    <img src="screenshots/mesh/ahmedBody/3.png"><br>
 </p>
 
 이후 생성된 Surface들의 이름을 다음과 같이 변경한다.<br>
