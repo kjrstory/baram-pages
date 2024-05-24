@@ -21,7 +21,7 @@ category: mesh
 Feature Angle을 비활성화하고 ahmed.stl을 연다.<br>
 
 <p align='center'>
-    <img src="/screenshots/mesh/ahmedBody/1.png"><br>
+    <img src="/baram-pages/screenshots/mesh/ahmedBody/1.png"><br>
 </p>
 
 Geometry tab에서 surface들의 이름을 다음과 같이 변경한다.<br>
